@@ -1,7 +1,7 @@
 // main index.js
 
-import { NativeModules } from 'react-native';
+import { NativeModules } from "react-native";
 
-const { ReactNativeToasty } = NativeModules;
+const { Toasty } = NativeModules;
 
-export default ReactNativeToasty;
+export default Toasty;
