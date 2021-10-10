@@ -8,22 +8,23 @@
  * https://github.com/facebook/react-native
  */
 
-import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
-import ReactNativeToasty from 'react-native-toasty';
+import React, {Component} from 'react';
+import {Platform, StyleSheet, Text, View} from 'react-native';
+import Toasty from 'react-native-toasty';
 
 export default class App extends Component<{}> {
   state = {
     status: 'starting',
-    message: '--'
+    message: '--',
   };
   componentDidMount() {
-    ReactNativeToasty.sampleMethod('Testing', 123, (message) => {
+    Toasty.sampleMethod('Testing', 123, message => {
       this.setState({
         status: 'native callback received',
-        message
+        message,
       });
     });
+    Toasty.toast('Testing');
   }
   render() {
     return (
