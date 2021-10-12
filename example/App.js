@@ -24,7 +24,7 @@ export default class App extends Component<{}> {
         message,
       });
     });
-    Toasty.toast('Testing');
+    Toasty.toast('Testing message');
   }
   render() {
     return (

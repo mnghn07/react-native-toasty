@@ -2,6 +2,6 @@
 
 #import <React/RCTBridgeModule.h>
 
-@interface ReactNativeToasty : NSObject <RCTBridgeModule>
+@interface Toasty : NSObject <RCTBridgeModule>
 
 @end
