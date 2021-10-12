@@ -1,11 +1,12 @@
 // ReactNativeToasty.m
 
 #import "ReactNativeToasty.h"
+#import "React/RCTLog.h"
 
 
 @implementation Toasty
 
-private double const DURATION = 3.5;
+double const DURATION = 3.5;
 
 RCT_EXPORT_MODULE(Toasty)
 
@@ -15,9 +16,9 @@ RCT_EXPORT_METHOD(sampleMethod:(NSString *)stringArgument numberParameter:(nonnu
     callback(@[[NSString stringWithFormat: @"numberArgument: %@ stringArgument: %@", numberArgument, stringArgument]]);
 }
 
-RCT_EXPORT_METHOD(toast:(NSString *)message duration:(nonnull NSNumber *)duration)
+RCT_EXPORT_METHOD(toast:(NSString *)message)
 {
-    
+    RCTLogInfo(@"Testing");
 }
 
 @end
